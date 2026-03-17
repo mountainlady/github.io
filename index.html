@@ -1,158 +1,141 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.4">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-    span.s1 {font: 12.0px 'Apple Color Emoji'}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parvati Ramachandran — Product Director & AI Strategist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --indigo-900: #1e1b4b; --indigo-800: #312e81; --indigo-600: #4338ca;
+            --indigo-400: #818cf8; --indigo-100: #e0e7ff; --indigo-50: #eef2ff;
+            --blue-500: #3b82f6; --blue-50: #eff6ff; --slate-800: #1e293b;
+            --slate-600: #475569; --slate-500: #64748b; --slate-50: #f8fafc;
+            --white: #ffffff;
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Outfit', sans-serif; background: var(--slate-50); color: var(--slate-800); line-height: 1.7; }
+        nav { position: fixed; top: 0; width: 100%; z-index: 100; background: rgba(255,255,255,0.8); backdrop-filter: blur(10px); border-bottom: 1px solid var(--indigo-100); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+        .nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 600; color: var(--indigo-800); }
+        .nav-links { display: flex; gap: 1.5rem; list-style: none; }
+        .nav-links a { text-decoration: none; color: var(--slate-600); font-size: 0.85rem; transition: 0.2s; }
+        .nav-links a:hover { color: var(--indigo-600); }
+        section { padding: 6rem 2rem; }
+        .container { max-width: 1100px; margin: 0 auto; }
+        .section-label { font-size: 0.7rem; font-weight: 600; text-transform: uppercase; color: var(--indigo-600); letter-spacing: 0.1em; margin-bottom: 0.5rem; }
+        .section-title { font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; color: var(--indigo-900); margin-bottom: 1.5rem; }
+        .hero { min-height: 100vh; display: flex; align-items: center; background: linear-gradient(160deg, var(--indigo-50) 0%, var(--white) 100%); }
+        .hero-inner { display: grid; grid-template-columns: 1fr 350px; gap: 4rem; align-items: center; }
+        .btn-primary { background: var(--indigo-600); color: white; padding: 0.8rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 500; display: inline-block; }
+        .hero-card { background: white; padding: 2rem; border-radius: 24px; border: 1px solid var(--indigo-100); box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .timeline { border-left: 2px solid var(--indigo-100); padding-left: 2rem; }
+        .tl-item { margin-bottom: 3rem; position: relative; }
+        .tl-item::before { content: ''; position: absolute; left: calc(-2rem - 6px); top: 0.5rem; width: 10px; height: 10px; border-radius: 50%; background: var(--indigo-600); }
+        .tl-date { font-size: 0.8rem; color: var(--slate-500); }
+        .tl-role { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; color: var(--indigo-900); font-weight: 600; }
+        .badge-box { background: var(--indigo-50); border-left: 4px solid var(--indigo-600); padding: 1rem; margin-top: 1rem; font-size: 0.9rem; }
+        .ai-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .ai-card { background: white; border: 1px solid var(--indigo-100); border-radius: 16px; padding: 1.5rem; transition: 0.3s; text-decoration: none; color: inherit; display: block; }
+        .ai-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+        .skill-pills { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
+        .skill-pill { background: var(--white); border: 1px solid var(--indigo-100); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; color: var(--indigo-800); }
+        .skill-pill.hl { background: var(--indigo-600); color: white; border-color: var(--indigo-600); }
+        footer { background: var(--indigo-900); color: white; text-align: center; padding: 2rem; font-size: 0.8rem; }
+        @media (max-width: 768px) { .hero-inner { grid-template-columns: 1fr; } .hero-card { display: none; } }
+    </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Parvati Ramachandran — Product Director &amp; AI Strategist&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&amp;family=Outfit:wght@300;400;500&amp;display=swap" rel="stylesheet"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>:root {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--indigo-900: #1e1b4b; --indigo-800: #312e81; --indigo-600: #4338ca;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--indigo-400: #818cf8; --indigo-100: #e0e7ff; --indigo-50: #eef2ff;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--blue-500: #3b82f6; --blue-50: #eff6ff; --slate-800: #1e293b;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--slate-600: #475569; --slate-500: #64748b; --slate-50: #f8fafc;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--white: #ffffff;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>body { font-family: 'Outfit', sans-serif; background: var(--slate-50); color: var(--slate-800); line-height: 1.7; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>nav { position: fixed; top: 0; width: 100%; z-index: 100; background: rgba(255,255,255,0.8); backdrop-filter: blur(10px); border-bottom: 1px solid var(--indigo-100); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 600; color: var(--indigo-800); }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.nav-links { display: flex; gap: 1.5rem; list-style: none; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.nav-links a { text-decoration: none; color: var(--slate-600); font-size: 0.85rem; transition: 0.2s; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.nav-links a:hover { color: var(--indigo-600); }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>section { padding: 6rem 2rem; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.container { max-width: 1100px; margin: 0 auto; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.section-label { font-size: 0.7rem; font-weight: 600; text-transform: uppercase; color: var(--indigo-600); letter-spacing: 0.1em; margin-bottom: 0.5rem; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.section-title { font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; color: var(--indigo-900); margin-bottom: 1.5rem; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.hero { min-height: 100vh; display: flex; align-items: center; background: linear-gradient(160deg, var(--indigo-50) 0%, var(--white) 100%); }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.hero-inner { display: grid; grid-template-columns: 1fr 350px; gap: 4rem; align-items: center; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.btn-primary { background: var(--indigo-600); color: white; padding: 0.8rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 500; display: inline-block; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.hero-card { background: white; padding: 2rem; border-radius: 24px; border: 1px solid var(--indigo-100); box-shadow: 0 10px 30px rgba(0,0,0,0.05); }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.timeline { border-left: 2px solid var(--indigo-100); padding-left: 2rem; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.tl-item { margin-bottom: 3rem; position: relative; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.tl-item::before { content: ''; position: absolute; left: calc(-2rem - 6px); top: 0.5rem; width: 10px; height: 10px; border-radius: 50%; background: var(--indigo-600); }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.tl-date { font-size: 0.8rem; color: var(--slate-500); }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.tl-role { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; color: var(--indigo-900); font-weight: 600; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.badge-box { background: var(--indigo-50); border-left: 4px solid var(--indigo-600); padding: 1rem; margin-top: 1rem; font-size: 0.9rem; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.ai-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.ai-card { background: white; border: 1px solid var(--indigo-100); border-radius: 16px; padding: 1.5rem; transition: 0.3s; text-decoration: none; color: inherit; display: block; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.ai-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.skill-pills { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.skill-pill { background: var(--white); border: 1px solid var(--indigo-100); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; color: var(--indigo-800); }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.skill-pill.hl { background: var(--indigo-600); color: white; border-color: var(--indigo-600); }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>footer { background: var(--indigo-900); color: white; text-align: center; padding: 2rem; font-size: 0.8rem; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>@media (max-width: 768px) { .hero-inner { grid-template-columns: 1fr; } .hero-card { display: none; } }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;nav&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="nav-logo"&gt;Parvati Ramachandran&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;ul class="nav-links"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;a href="#experience"&gt;Experience&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;a href="#ai"&gt;AI Products&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;a href="#writing"&gt;Insights&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;a href="#education"&gt;Education&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/nav&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="hero"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="hero-inner"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h1 class="section-title" style="font-size: 3.5rem;"&gt;Building products that make &lt;em&gt;hard tech&lt;/em&gt; feel human.&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p style="margin-bottom: 2rem; font-size: 1.1rem; color: var(--slate-600);"&gt;Director of Product (AI &amp; Platform) at Adform. 12+ years scaling global SaaS platforms across AdTech, EdTech, and FinTech.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="mailto:parvati.ramachandran89@gmail.com" class="btn-primary"&gt;Get in touch&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="hero-card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; margin-bottom: 1rem;"&gt;Parvati Ramachandran&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p style="font-size: 0.85rem; color: var(--slate-500);"&gt;Based in Mumbai, India&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="badge-box" style="margin-top: 1.5rem; border-left-color: #22c55e; background: #f0fdf4;"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span><span class="s1">🌿</span> Open to New Zealand opportunities</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="experience" class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="section-label"&gt;Career&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 class="section-title"&gt;Experience&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="timeline"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="tl-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="tl-date"&gt;Mar 2023 – Present&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="tl-role"&gt;Director of Product — AI &amp; Platform @ Adform&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Leading GenAI strategy and distributed teams across Mumbai, Lithuania, and Warsaw.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="badge-box"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;strong&gt;Leadership Development:&lt;/strong&gt; Completed Adform’s Leadership Fundamentals (2025) covering Leading with Trust, Situational Leadership, and Strategy Execution.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="tl-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="tl-date"&gt;Mar 2019 – Mar 2023&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="tl-role"&gt;Head of Product @ iSchoolConnect&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Core leadership team. Generated $14M USD revenue by launching AI-based Fraud Detection systems.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="writing" style="background: var(--indigo-50);"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="section-label"&gt;Thought Leadership&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="section-title"&gt;LinkedIn Insights&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="ai-grid"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="https://www.linkedin.com/in/parvati-ramachandran/" target="_blank" class="ai-card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;Real-Time Bidding &amp; Scalability&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p style="font-size: 0.9rem; margin-top: 0.5rem;"&gt;Exploring the infrastructure that powers modern programmatic advertising.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="https://www.linkedin.com/in/parvati-ramachandran/" target="_blank" class="ai-card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;The "Agentic" Roadmap&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p style="font-size: 0.9rem; margin-top: 0.5rem;"&gt;How autonomous AI agents are redefining the B2B SaaS experience.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="skills" class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="section-label"&gt;Capabilities&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 class="section-title"&gt;Skills &amp; Tools&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="skill-pills"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="skill-pill hl"&gt;Agile Leadership&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="skill-pill hl"&gt;GenAI Strategy&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="skill-pill hl"&gt;Model Context Protocol (MCP)&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="skill-pill"&gt;C-Level Communication&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="skill-pill"&gt;Distributed Team Management&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="skill-pill"&gt;Zero-to-One Scaling&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="education" style="background: white;"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="section-label"&gt;Academic&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="section-title"&gt;Education&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="tl-role"&gt;Bachelor of Engineering&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p style="color: var(--slate-600);"&gt;Systems Engineering foundation at Infosys Ltd.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;footer&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;© 2026 Parvati Ramachandran · Mumbai, India&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+    <nav>
+        <div class="nav-logo">Parvati Ramachandran</div>
+        <ul class="nav-links">
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#ai">AI Products</a></li>
+            <li><a href="#writing">Insights</a></li>
+            <li><a href="#education">Education</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-inner">
+                <div>
+                    <h1 class="section-title" style="font-size: 3.5rem;">Building products that make <em>hard tech</em> feel human.</h1>
+                    <p style="margin-bottom: 2rem; font-size: 1.1rem; color: var(--slate-600);">Director of Product (AI & Platform) at Adform. 12+ years scaling global SaaS platforms across AdTech, EdTech, and FinTech.</p>
+                    <a href="mailto:parvati.ramachandran89@gmail.com" class="btn-primary">Get in touch</a>
+                </div>
+                <div class="hero-card">
+                    <div style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; margin-bottom: 1rem;">Parvati Ramachandran</div>
+                    <p style="font-size: 0.85rem; color: var(--slate-500);">Based in Mumbai, India</p>
+                    <div class="badge-box" style="margin-top: 1.5rem; border-left-color: #22c55e; background: #f0fdf4;">
+                        🌿 Open to New Zealand opportunities
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="container">
+        <div class="section-label">Career</div>
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+            <div class="tl-item">
+                <div class="tl-date">Mar 2023 – Present</div>
+                <div class="tl-role">Director of Product — AI & Platform @ Adform</div>
+                <p>Leading GenAI strategy and distributed teams across Mumbai, Lithuania, and Warsaw.</p>
+                <div class="badge-box">
+                    <strong>Leadership Development:</strong> Completed Adform’s Leadership Fundamentals (2025) covering Leading with Trust, Situational Leadership, and Strategy Execution.
+                </div>
+            </div>
+            <div class="tl-item">
+                <div class="tl-date">Mar 2019 – Mar 2023</div>
+                <div class="tl-role">Head of Product @ iSchoolConnect</div>
+                <p>Core leadership team. Generated $14M USD revenue by launching AI-based Fraud Detection systems.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="writing" style="background: var(--indigo-50);">
+        <div class="container">
+            <div class="section-label">Thought Leadership</div>
+            <h2 class="section-title">LinkedIn Insights</h2>
+            <div class="ai-grid">
+                <a href="https://www.linkedin.com/in/parvati-ramachandran/" target="_blank" class="ai-card">
+                    <h3>Real-Time Bidding & Scalability</h3>
+                    <p style="font-size: 0.9rem; margin-top: 0.5rem;">Exploring the infrastructure that powers modern programmatic advertising.</p>
+                </a>
+                <a href="https://www.linkedin.com/in/parvati-ramachandran/" target="_blank" class="ai-card">
+                    <h3>The "Agentic" Roadmap</h3>
+                    <p style="font-size: 0.9rem; margin-top: 0.5rem;">How autonomous AI agents are redefining the B2B SaaS experience.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="container">
+        <div class="section-label">Capabilities</div>
+        <h2 class="section-title">Skills & Tools</h2>
+        <div class="skill-pills">
+            <span class="skill-pill hl">Agile Leadership</span>
+            <span class="skill-pill hl">GenAI Strategy</span>
+            <span class="skill-pill hl">Model Context Protocol (MCP)</span>
+            <span class="skill-pill">C-Level Communication</span>
+            <span class="skill-pill">Distributed Team Management</span>
+            <span class="skill-pill">Zero-to-One Scaling</span>
+        </div>
+    </section>
+
+    <section id="education" style="background: white;">
+        <div class="container">
+            <div class="section-label">Academic</div>
+            <h2 class="section-title">Education</h2>
+            <div class="tl-role">Bachelor of Engineering</div>
+            <p style="color: var(--slate-600);">Systems Engineering foundation at Infosys Ltd.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Parvati Ramachandran · Mumbai, India</p>
+    </footer>
 </body>
 </html>
