@@ -158,21 +158,18 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:var(--bg);border
 .art-sec .sec-lbl{color:#a5b4fc;}
 .art-sec .sec-h2{color:#fff;}
 .art-sec .sec-intro{color:rgba(165,180,252,.6);}
-/* ── ART GALLERY — true masonry via CSS columns ── */
+/* ── ART GALLERY GRID — polaroid stack effect ── */
 .masonry {
-  columns: 3;
-  column-gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
 .mi {
-  break-inside: avoid;
-  margin-bottom: 1.5rem;
   position: relative;
   cursor: pointer;
-  display: inline-block;
-  width: 100%;
   transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1);
 }
-/* Slight random rotation per card */
+/* Each card has a slight random rotation baked in via nth-child */
 .mi:nth-child(1)  { transform: rotate(-2deg); }
 .mi:nth-child(2)  { transform: rotate(1.5deg); }
 .mi:nth-child(3)  { transform: rotate(-1deg); }
@@ -189,6 +186,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:var(--bg);border
   position: absolute;
   inset: 0;
   border-radius: 4px;
+  background: rgba(255,255,255,0.15);
   z-index: -1;
 }
 .mi::before {
@@ -202,20 +200,19 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:var(--bg);border
 /* Polaroid white border */
 .mi img {
   width: 100%;
-  height: auto;
   display: block;
   border-radius: 3px;
   box-shadow: 0 6px 28px rgba(0,0,0,0.35), 0 2px 6px rgba(0,0,0,0.2);
   padding: 8px 8px 28px 8px;
   background: white;
-  transition: box-shadow 0.35s ease;
+  transition: transform 0.35s ease;
 }
 .mi:hover {
-  transform: rotate(0deg) scale(1.05) translateY(-6px) !important;
+  transform: rotate(0deg) scale(1.06) translateY(-6px) !important;
   z-index: 10;
 }
 .mi:hover img {
-  box-shadow: 0 20px 56px rgba(0,0,0,0.5);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.4);
 }
 .csec{padding:6rem 2rem;background:var(--bg);text-align:center;}
 .ccards{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;margin:2rem 0;}
@@ -236,7 +233,7 @@ footer{background:var(--bg-subtle);border-top:1px solid var(--border);padding:1.
 .stagger.visible>*:nth-child(5){transition-delay:.33s;opacity:1;transform:none;}
 .stagger.visible>*:nth-child(6){transition-delay:.40s;opacity:1;transform:none;}
 @keyframes fadeUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:none;}}
-@media(max-width:768px){.hero-inner{grid-template-columns:1fr;}.hero-visual{display:none;}.pgrid{grid-template-columns:1fr;}.sgrid{grid-template-columns:1fr;}.erow{grid-template-columns:1fr;}.masonry{columns:2;}.wrgrid{grid-template-columns:1fr;}.hero-stats{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:768px){.hero-inner{grid-template-columns:1fr;}.hero-visual{display:none;}.pgrid{grid-template-columns:1fr;}.sgrid{grid-template-columns:1fr;}.erow{grid-template-columns:1fr;}.masonry{grid-template-columns:repeat(2,1fr);}.wrgrid{grid-template-columns:1fr;}.hero-stats{grid-template-columns:repeat(2,1fr);}}
 @media(max-width:900px){.nav-links{display:none;}}
 
 
@@ -770,7 +767,7 @@ footer{background:var(--bg-subtle);border-top:1px solid var(--border);padding:1.
     <p style="font-size:15px;color:var(--text-3);margin-bottom:0;font-weight:300;text-align:center;" class="reveal">Open to product leadership roles, AI advisory, and speaking engagements.</p>
     <div class="ccards stagger">
       <a href="https://mountainlady.github.io/github.io/" target="_blank" class="ccard"><div class="cicon">&#127760;</div><div><div class="clbl">Portfolio</div><div class="cval">mountainlady.github.io/github.io</div></div></a>
-      <a href="/cdn-cgi/l/email-protection#3f4f5e4d495e4b56114d5e525e5c575e515b4d5e5107067f58525e5653115c5052" class="ccard"><div class="cicon">&#9993;&#65039;</div><div><div class="clbl">Email</div><div class="cval"><span class="__cf_email__" data-cfemail="cebeafbcb8afbaa7e0bcafa3afada6afa0aabcafa0f6f78ea9a3afa7a2e0ada1a3">[email&#160;protected]</span></div></div></a>
+      <a href="/cdn-cgi/l/email-protection#a9d9c8dbdfc8ddc087dbc8c4c8cac1c8c7cddbc8c79190e9cec4c8c0c587cac6c4" class="ccard"><div class="cicon">&#9993;&#65039;</div><div><div class="clbl">Email</div><div class="cval"><span class="__cf_email__" data-cfemail="651504171304110c4b17040804060d040b0117040b5d5c250208040c094b060a08">[email&#160;protected]</span></div></div></a>
       <a href="tel:+917977692701" class="ccard"><div class="cicon">&#128222;</div><div><div class="clbl">Phone</div><div class="cval">+91 797 769 2701</div></div></a>
       <a href="https://www.linkedin.com/in/parvati-ramachandran/" target="_blank" class="ccard"><div class="cicon">&#128188;</div><div><div class="clbl">LinkedIn</div><div class="cval">parvati-ramachandran</div></div></a>
     </div>
@@ -947,7 +944,6 @@ window.addEventListener('scroll',()=>{document.getElementById('nav').style.boxSh
   <div style="font-size:13px;font-weight:700;margin-bottom:8px;color:var(--accent);font-family:'Nunito',sans-serif;">How was your visit? 😸</div>
   <div style="display:flex;flex-direction:column;gap:5px;">
     <button class="cat-react-btn" onclick="catReact('loved')">👍 Loved it!</button>
-    <button class="cat-react-btn" onclick="catReact('connect')">💬 Want to connect</button>
     <button class="cat-react-btn" onclick="catReact('feedback')">🤔 Have feedback</button>
   </div>
   <div id="cat-thanks" style="display:none;text-align:center;font-size:13px;font-weight:700;color:var(--accent);padding:4px 0;font-family:'Nunito',sans-serif;">Thanks! 🐱✨</div>
@@ -1088,13 +1084,6 @@ function catReact(r) {
       window.open('https://tally.so/r/eqEOEE', '_blank');
       catThanks.style.display = 'block';
     }
-  } else if(r === 'connect') {
-    submitToTallyForm1('Want to connect 💬');
-    catThanks.textContent = 'Taking you there! 😸';
-    catThanks.style.display = 'block';
-    setTimeout(() => {
-      document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
-    }, 800);
   } else {
     submitToTallyForm1('Loved it 👍');
     catThanks.style.display = 'block';
